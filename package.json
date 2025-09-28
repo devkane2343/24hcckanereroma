@@ -1,21 +1,12 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "index.html",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "dist/**/*",
-      "use": "@vercel/static"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
-    }
-  ],
-  "buildCommand": "npm run build",
-  "outputDirectory": "dist"
+  "name": "static-scss-site",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "sass --watch src/scss/main.scss dist/css/main.css",
+    "build": "sass src/scss/main.scss dist/css/main.css --no-source-map --style=compressed"
+  },
+  "devDependencies": {
+    "sass": "^1.93.2"
+  }
 }
