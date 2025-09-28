@@ -1,8 +1,22 @@
-// Dropdown menu functionality
+// Enhanced website functionality with animations and mobile responsiveness
 document.addEventListener("DOMContentLoaded", () => {
     const dropdownMenu = document.querySelector(".dropdown-menu")
     const menuToggle = document.querySelector(".menu-toggle")
     const header = document.querySelector(".header")
+  
+    // Header scroll effect
+    let lastScrollY = window.scrollY
+    window.addEventListener("scroll", () => {
+      const currentScrollY = window.scrollY
+      
+      if (currentScrollY > 100) {
+        header.classList.add("scrolled")
+      } else {
+        header.classList.remove("scrolled")
+      }
+      
+      lastScrollY = currentScrollY
+    })
   
     // Dropdown menu toggle functionality
     menuToggle.addEventListener("click", function (e) {
@@ -95,32 +109,57 @@ document.addEventListener("DOMContentLoaded", () => {
       })
     })
   
-    // Testimonial animation on scroll
-    const testimonial = document.querySelector(".testimonial")
-  
+    // Enhanced scroll animations with intersection observer
     const observerOptions = {
-      threshold: 0.5,
-      rootMargin: "0px 0px -100px 0px",
+      threshold: 0.1,
+      rootMargin: "0px 0px -50px 0px",
     }
   
-    const testimonialObserver = new IntersectionObserver((entries) => {
+    const scrollObserver = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.style.opacity = "1"
-          entry.target.style.transform = "translateY(0)"
+          entry.target.classList.add("animate-in")
         }
       })
     }, observerOptions)
+  
+    // Observe all sections for scroll animations
+    const sections = document.querySelectorAll("section")
+    sections.forEach(section => {
+      section.classList.add("fade-in")
+      scrollObserver.observe(section)
+    })
+  
+    // Observe cards and feature items
+    const cards = document.querySelectorAll(".benefit-card, .feature-item, .step, .ingredient, .fan-card")
+    cards.forEach((card, index) => {
+      card.classList.add("fade-in")
+      card.style.animationDelay = `${index * 0.1}s`
+      scrollObserver.observe(card)
+    })
+  
+    // Testimonial animation on scroll
+    const testimonial = document.querySelector(".testimonial")
   
     if (testimonial) {
       testimonial.style.opacity = "0"
       testimonial.style.transform = "translateY(20px)"
       testimonial.style.transition = "all 0.6s ease"
-      testimonialObserver.observe(testimonial)
+      scrollObserver.observe(testimonial)
     }
   
-    // Add loading animation
+    // Enhanced loading animations and image lazy loading
     window.addEventListener("load", () => {
+      // Hide page loading screen
+      const pageLoading = document.querySelector('.page-loading')
+      if (pageLoading) {
+        pageLoading.classList.add('hidden')
+        setTimeout(() => {
+          pageLoading.remove()
+        }, 500)
+      }
+      
+      // Fade in body
       document.body.style.opacity = "0"
       document.body.style.transition = "opacity 0.5s ease"
   
@@ -128,6 +167,38 @@ document.addEventListener("DOMContentLoaded", () => {
         document.body.style.opacity = "1"
       }, 100)
     })
+    
+    // Image lazy loading with loading states
+    const images = document.querySelectorAll('img')
+    images.forEach(img => {
+      img.classList.add('loading')
+      
+      img.addEventListener('load', () => {
+        img.classList.remove('loading')
+        img.classList.add('loaded')
+      })
+      
+      img.addEventListener('error', () => {
+        img.classList.remove('loading')
+        img.style.opacity = '0.5'
+      })
+    })
+    
+    // Add skeleton loading for dynamic content
+    function addSkeletonLoading(element, type = 'text') {
+      const skeleton = document.createElement('div')
+      skeleton.className = `skeleton skeleton-${type}`
+      element.appendChild(skeleton)
+      
+      return skeleton
+    }
+    
+    // Remove skeleton loading
+    function removeSkeletonLoading(skeleton) {
+      if (skeleton && skeleton.parentNode) {
+        skeleton.parentNode.removeChild(skeleton)
+      }
+    }
   })
   
   // Add some interactive features
