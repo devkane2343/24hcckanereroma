@@ -1,53 +1,59 @@
-// ===== Section 9 =====
+// ===== Section 9: Three Perfect Formulas =====
 
 .section-9 {
-  background: #f0f9fc;
-  padding: 4rem 10%;
-  font-family: "Inter", sans-serif;
-  position: relative;
-  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 10%;
+  flex-wrap: wrap;
+  gap: 40px;
+  background: #1f2029;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
 }
 
-.section-9::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: radial-gradient(circle at 20% 80%, rgba(255, 193, 7, 0.05) 0%, transparent 60%);
-  pointer-events: none;
+.section-9 .badge {
+  display: inline-block;
+  background: #ffb400;
+  color: #1f2029;
+  padding: 6px 18px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.section-9 h1 {
+  font-size: 48px;
+  font-weight: 800;
+  margin: 0 0 10px 0;
+}
+
+.section-9 .subtext {
+  font-family: "Source Code Pro", monospace;
+  font-size: 16px;
+  color: #ccc;
+  margin-bottom: 50px;
+}
+
+.section-9 .subtext span {
+  text-decoration: underline;
+  font-weight: 500;
 }
 
 .section-9 h2 {
-  font-size: 2.2rem;
-  font-weight: 900;
-  color: #222;
-  text-align: center;
-  margin-bottom: 2rem;
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 15px;
 }
 
-/* Responsive adjustments for section 9 */
-@media (max-width: 1200px) {
-  .section-9 {
-    padding: 3rem 8%;
-  }
+.section-9 .desc {
+  font-family: "Source Code Pro", monospace;
+  color: #ccc;
+  line-height: 1.6;
 }
 
-@media (max-width: 768px) {
-  .section-9 {
-    padding: 2rem 5%;
-  }
-  .section-9 h2 {
-    font-size: clamp(1.8rem, 6vw, 2.2rem);
-  }
-}
-
-@media (max-width: 480px) {
-  .section-9 {
-    padding: 1.5rem 4%;
-  }
-  .section-9 h2 {
-    font-size: clamp(1.5rem, 8vw, 1.8rem);
-  }
+.section-9 .formula-image img {
+  width: 280px;
+  max-width: 100%;
 }

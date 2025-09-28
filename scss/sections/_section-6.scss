@@ -27,6 +27,13 @@
   margin-bottom: 2rem;
 }
 
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
 .ingredients-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -34,7 +41,7 @@
   margin-top: 2rem;
 }
 
-.ingredient {
+.section-6 .ingredient {
   background: #fff;
   border-radius: 15px;
   padding: 1.5rem;
@@ -43,12 +50,12 @@
   transition: var(--transition);
 }
 
-.ingredient:hover {
+.section-6 .ingredient:hover {
   transform: translateY(-5px);
   box-shadow: var(--shadow-medium);
 }
 
-.ingredient img {
+.section-6 .ingredient img {
   width: 80px;
   height: 80px;
   border-radius: 50%;
@@ -56,14 +63,14 @@
   margin-bottom: 1rem;
 }
 
-.ingredient h3 {
+.section-6 .ingredient h3 {
   font-size: 1.1rem;
   font-weight: 700;
   color: #222;
   margin-bottom: 0.5rem;
 }
 
-.ingredient p {
+.section-6 .ingredient p {
   font-size: 0.9rem;
   color: #555;
   line-height: 1.5;
@@ -76,6 +83,13 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
 @media (max-width: 768px) {
   .section-6 {
     padding: 2rem 5%;
@@ -83,21 +97,25 @@
   .section-6 h2 {
     font-size: clamp(1.8rem, 6vw, 2.2rem);
   }
+  .benefits-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
   .ingredients-grid {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1.5rem;
   }
-  .ingredient {
+  .section-6 .ingredient {
     padding: 1.2rem;
   }
-  .ingredient img {
+  .section-6 .ingredient img {
     width: 60px;
     height: 60px;
   }
-  .ingredient h3 {
+  .section-6 .ingredient h3 {
     font-size: 1rem;
   }
-  .ingredient p {
+  .section-6 .ingredient p {
     font-size: 0.85rem;
   }
 }
@@ -113,17 +131,17 @@
     grid-template-columns: 1fr;
     gap: 1rem;
   }
-  .ingredient {
+  .section-6 .ingredient {
     padding: 1rem;
   }
-  .ingredient img {
+  .section-6 .ingredient img {
     width: 50px;
     height: 50px;
   }
-  .ingredient h3 {
+  .section-6 .ingredient h3 {
     font-size: 0.95rem;
   }
-  .ingredient p {
+  .section-6 .ingredient p {
     font-size: 0.8rem;
   }
 }

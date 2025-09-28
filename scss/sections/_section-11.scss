@@ -1,53 +1,129 @@
 // ===== Section 11 =====
 
 .section-11 {
-  background: #f0f9fc;
-  padding: 4rem 10%;
-  font-family: "Inter", sans-serif;
-  position: relative;
-  overflow: hidden;
+  background: #1d1f28; /* match site dark bg */
+  color: #fff;
+  padding: 60px 6%;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
 }
 
-.section-11::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: radial-gradient(circle at 80% 20%, rgba(255, 193, 7, 0.05) 0%, transparent 60%);
-  pointer-events: none;
+.section-11__inner {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.section-11 h2 {
-  font-size: 2.2rem;
-  font-weight: 900;
-  color: #222;
+.section-11__title {
+  color: #ffb800;
   text-align: center;
-  margin-bottom: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  margin-bottom: 36px;
+  font-size: 16px;
 }
 
-/* Responsive adjustments for section 11 */
-@media (max-width: 1200px) {
-  .section-11 {
-    padding: 3rem 8%;
+/* Testimonials grid */
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  align-items: start;
+}
+
+/* Single testimonial card */
+.testimonial {
+  background: #ecf6fa; /* pale card bg */
+  color: #121416;
+  padding: 28px;
+  border-radius: 34px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  min-height: 220px;
+}
+
+/* Stars (use simple text star characters so no external assets needed) */
+.testimonial__stars {
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #222;
+  opacity: 0.95;
+}
+
+/* Quote style */
+.testimonial__quote {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+  color: #1b2430;
+  opacity: 0.95;
+}
+
+/* Meta (avatar + name/role) */
+.testimonial__meta {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: auto;
+}
+
+/* circular avatar with initials */
+.avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #1d2b36;
+  border: 3px solid rgba(0,0,0,0.08);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  font-family: inherit;
+}
+
+/* name & role */
+.meta-text .meta-name {
+  font-weight: 700;
+  color: #122233;
+  font-size: 14px;
+}
+
+.meta-text .meta-role {
+  font-size: 12px;
+  color: #6b7b88;
+  letter-spacing: 0.6px;
+  margin-top: 3px;
+}
+
+/* Make cards have pill-like corners on the horizontal edges (matching screenshot feel) */
+.testimonial {
+  border-top-left-radius: 34px;
+  border-top-right-radius: 34px;
+  border-bottom-left-radius: 34px;
+  border-bottom-right-radius: 34px;
+}
+
+/* Responsive: stack on smaller screens */
+@media (max-width: 980px) {
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .section-11__title {
+    margin-bottom: 24px;
   }
 }
 
-@media (max-width: 768px) {
-  .section-11 {
-    padding: 2rem 5%;
+/* Slightly larger gap and centered content for very wide screens */
+@media (min-width: 1400px) {
+  .section-11__inner {
+    max-width: 1400px;
   }
-  .section-11 h2 {
-    font-size: clamp(1.8rem, 6vw, 2.2rem);
-  }
-}
-
-@media (max-width: 480px) {
-  .section-11 {
-    padding: 1.5rem 4%;
-  }
-  .section-11 h2 {
-    font-size: clamp(1.5rem, 8vw, 1.8rem);
+  .testimonials {
+    gap: 40px;
   }
 }
