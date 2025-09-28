@@ -1,0 +1,37 @@
+// ===== Main SCSS File =====
+// This file imports all partials in the correct order
+
+// Base
+@import "base/reset";
+@import "base/variables";
+@import "base/mixins";
+@import "base/animations";
+
+// Layout
+@import "layout/header";
+@import "layout/footer";
+@import "layout/main";
+
+// Components
+@import "components/buttons";
+@import "components/cards";
+@import "components/dropdown";
+@import "components/modal";
+@import "components/marquee";
+@import "components/cart";
+
+// Sections
+@import "sections/hero";
+@import "sections/section-2";
+@import "sections/section-3";
+@import "sections/section-4";
+@import "sections/section-5";
+@import "sections/section-6";
+@import "sections/section-7";
+@import "sections/section-8";
+@import "sections/section-9";
+@import "sections/section-10";
+@import "sections/section-11";
+@import "sections/section-12";
+@import "sections/section-13";
+@import "sections/section-14";

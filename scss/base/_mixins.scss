@@ -1,0 +1,13 @@
+// ===== Mixins and Utility Classes =====
+
+// Button hover effects
+button, .cta-button, .cta-btn, .btn-add {
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+button:hover, .cta-button:hover, .cta-btn:hover, .btn-add:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-medium);
+}

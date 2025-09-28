@@ -1,0 +1,138 @@
+// ===== Section 4 =====
+
+.section-4 {
+  background: #f0f9fc;
+  padding: 5rem 10%;
+  font-family: "Inter", sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-4::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(255, 193, 7, 0.03) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.steps-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  text-align: center;
+}
+
+.step {
+  flex: 1 1 30%;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.step-image {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.step-image img {
+  width: 100%;
+  display: block;
+  border-radius: 20px;
+}
+
+.step-number {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #fff;
+  color: #000;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.step-info {
+  margin-top: 1rem;
+}
+
+.step-info .product-img {
+  width: 50px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+.step-info p {
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.4;
+}
+
+/* Responsive adjustments for section 4 */
+@media (max-width: 1200px) {
+  .section-4 {
+    padding: 4rem 8%;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-4 {
+    padding: 3rem 5%;
+  }
+  .steps-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .step {
+    flex: none;
+    max-width: 100%;
+    margin: 0;
+  }
+  .step-image img {
+    border-radius: 15px;
+  }
+  .step-number {
+    width: 25px;
+    height: 25px;
+    font-size: 0.9rem;
+  }
+  .step-info .product-img {
+    width: 40px;
+  }
+  .step-info p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-4 {
+    padding: 2rem 4%;
+  }
+  .steps-container {
+    gap: 1.5rem;
+  }
+  .step-image img {
+    border-radius: 12px;
+  }
+  .step-number {
+    width: 20px;
+    height: 20px;
+    font-size: 0.8rem;
+  }
+  .step-info .product-img {
+    width: 35px;
+  }
+  .step-info p {
+    font-size: 0.85rem;
+  }
+}

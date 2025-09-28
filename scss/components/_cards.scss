@@ -1,0 +1,237 @@
+// ===== Card Components =====
+
+.benefit-card {
+  background: transparent;
+  text-align: left;
+}
+
+.benefit-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.benefit-card h3 {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+
+.benefit-card p {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+.feature-item {
+  text-align: center;
+  flex: 1 1 200px;
+  margin: 1rem;
+}
+
+.feature-item img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.feature-item p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.4;
+}
+
+.step {
+  flex: 1 1 30%;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.step-image {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.step-image img {
+  width: 100%;
+  display: block;
+  border-radius: 20px;
+}
+
+.step-number {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #fff;
+  color: #000;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.step-info {
+  margin-top: 1rem;
+}
+
+.step-info .product-img {
+  width: 50px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+.step-info p {
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.4;
+}
+
+.ingredient {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.ingredient img {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.ingredient h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.ingredient p {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: #555d6a;
+  margin-top: 0.3rem;
+}
+
+.fan-card {
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+}
+
+.fan-card__media {
+  position: relative;
+}
+
+.fan-card__media img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.fan-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px;
+  background: #fff;
+}
+
+.fan-card__info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.stars {
+  font-size: 12px;
+  color: #333;
+  letter-spacing: 2px;
+}
+
+.product-name {
+  font-weight: 700;
+  font-size: 14px;
+  color: #000;
+}
+
+.price {
+  font-size: 13px;
+  color: #444;
+}
+
+.testimonial {
+  background: #ecf6fa;
+  color: #121416;
+  padding: 28px;
+  border-radius: 34px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  min-height: 220px;
+}
+
+.testimonial__stars {
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #222;
+  opacity: 0.95;
+}
+
+.testimonial__quote {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+  color: #1b2430;
+  opacity: 0.95;
+}
+
+.testimonial__meta {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: auto;
+}
+
+.avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #1d2b36;
+  border: 3px solid rgba(0,0,0,0.08);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  font-family: inherit;
+}
+
+.meta-text .meta-name {
+  font-weight: 700;
+  color: #122233;
+  font-size: 14px;
+}
+
+.meta-text .meta-role {
+  font-size: 12px;
+  color: #6b7b88;
+  letter-spacing: 0.6px;
+  margin-top: 3px;
+}

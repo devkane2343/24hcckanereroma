@@ -1,0 +1,31 @@
+// ===== Marquee Component =====
+
+.marquee {
+  position: relative;
+  overflow: hidden;
+}
+
+.marquee .marquee__track {
+  display: inline-flex;
+  align-items: center;
+  gap: 2.5rem;
+  white-space: nowrap;
+}
+
+/* Enable scrolling only on wider screens */
+@media (min-width: 769px) {
+  .marquee {
+    flex-wrap: nowrap;
+  }
+  .marquee .marquee__track {
+    will-change: transform;
+    animation: marquee-scroll 25s linear infinite;
+  }
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .marquee .marquee__track {
+    animation: none !important;
+  }
+}

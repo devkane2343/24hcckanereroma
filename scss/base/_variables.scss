@@ -1,0 +1,17 @@
+// ===== CSS Variables =====
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #ffc107;
+  --accent-color: #1d1f28;
+  --text-light: #ffffff;
+  --text-dark: #222;
+  --text-muted: #666;
+  --bg-light: #f5fcff;
+  --bg-dark: #1d1f28;
+  --shadow-light: 0 4px 15px rgba(0,0,0,0.1);
+  --shadow-medium: 0 8px 25px rgba(0,0,0,0.15);
+  --shadow-heavy: 0 15px 35px rgba(0,0,0,0.2);
+  --border-radius: 12px;
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-fast: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}

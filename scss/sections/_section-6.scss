@@ -1,0 +1,129 @@
+// ===== Section 6 =====
+
+.section-6 {
+  background: #f0f9fc;
+  padding: 4rem 10%;
+  font-family: "Inter", sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-6::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255, 193, 7, 0.03) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.section-6 h2 {
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: #222;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.ingredients-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.ingredient {
+  background: #fff;
+  border-radius: 15px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  transition: var(--transition);
+}
+
+.ingredient:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-medium);
+}
+
+.ingredient img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.ingredient h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+
+.ingredient p {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Responsive adjustments for section 6 */
+@media (max-width: 1200px) {
+  .section-6 {
+    padding: 3rem 8%;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-6 {
+    padding: 2rem 5%;
+  }
+  .section-6 h2 {
+    font-size: clamp(1.8rem, 6vw, 2.2rem);
+  }
+  .ingredients-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+  .ingredient {
+    padding: 1.2rem;
+  }
+  .ingredient img {
+    width: 60px;
+    height: 60px;
+  }
+  .ingredient h3 {
+    font-size: 1rem;
+  }
+  .ingredient p {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-6 {
+    padding: 1.5rem 4%;
+  }
+  .section-6 h2 {
+    font-size: clamp(1.5rem, 8vw, 1.8rem);
+  }
+  .ingredients-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .ingredient {
+    padding: 1rem;
+  }
+  .ingredient img {
+    width: 50px;
+    height: 50px;
+  }
+  .ingredient h3 {
+    font-size: 0.95rem;
+  }
+  .ingredient p {
+    font-size: 0.8rem;
+  }
+}
