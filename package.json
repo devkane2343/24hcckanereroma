@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "npx sass --watch src/scss/main.scss dist/css/main.css",
-    "build": "npx sass src/scss/main.scss dist/css/main.css --no-source-map --style=compressed",
+    "build": "npx sass src/scss/main.scss dist/css/styles.css --no-source-map --style=compressed",
     "vercel-build": "npm run build"
   },
   "devDependencies": {
