@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build:css": "npx --yes sass src/scss:dist/css --no-source-map",
-    "build": "npm run build:css",
+    "dev": "sass --watch src/scss/main.scss dist/css/main.css",
+    "build": "sass src/scss/main.scss dist/css/main.css --no-source-map --style=compressed",
     "vercel-build": "npm run build"
   },
   "devDependencies": {
-    "sass": "^1.80.0"
+    "sass": "^1.93.2"
   }
 }
