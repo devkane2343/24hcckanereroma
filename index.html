@@ -1,222 +1,257 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>eCommerce Homepage — Challenge</title>
-
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-  <!-- Foundation (CSS only) -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css">
-
-  <!-- Flickity (carousel) -->
-  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-
-  <!-- Your compiled CSS (ready to use) -->
-  <link rel="stylesheet" href="dist/css/main.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>D1 - Skincare for Guys</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Roboto+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  <header class="site-header grid-container full">
-    <div class="grid-x align-middle">
-      <div class="cell small-6 medium-3">
-        <a href="#" class="logo">SHOP<span class="logo-dot">.</span></a>
-      </div>
-
-      <nav class="cell hide-for-small-only medium-6">
-        <ul class="menu align-center">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Shop</a></li>
-          <li><a href="#">Collections</a></li>
-          <li><a href="#">About</a></li>
-        </ul>
-      </nav>
-
-      <div class="cell small-6 medium-3 text-right">
-        <button id="menuToggle" class="menu-toggle show-for-small-only" aria-controls="mobileMenu" aria-expanded="false">☰</button>
-        <a class="cart" href="#" aria-label="Cart">🛒</a>
-      </div>
+    <!-- Top Banner -->
+    <div class="top-banner">
+        <p>FREE SHIPPING ON US ORDERS OVER $100</p>
     </div>
 
-    <!-- Mobile menu (hidden by default) -->
-    <div id="mobileMenu" class="mobile-menu hide">
-      <ul class="vertical menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Shop</a></li>
-        <li><a href="#">Collections</a></li>
-        <li><a href="#">About</a></li>
-      </ul>
+    <!-- Header -->
+    <header class="header">
+        <div class="dropdown-menu">
+            <button class="menu-toggle" aria-label="Menu">
+                <span>Menu</span>
+                <svg class="dropdown-arrow" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                    <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <div class="dropdown-content">
+                <a href="#" class="dropdown-item">Home</a>
+                <a href="#" class="dropdown-item">About Us</a>
+                <a href="#" class="dropdown-item">Products</a>
+                <a href="#" class="dropdown-item">Contact Us</a>
+            </div>
+        </div>
+        
+        <div class="logo">
+            <h1>D1</h1>
+        </div>
+        
+        <div class="header-actions">
+            <button class="get-started-btn">GET STARTED</button>
+            <button class="cart-btn" aria-label="Shopping Cart">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M3 3H5L5.4 5M7 13H17L21 5H5.4M7 13L5.4 5M7 13L4.7 15.3C4.3 15.7 4.6 16.5 5.1 16.5H17M17 13V17C17 18.1 16.1 19 15 19H9C7.9 19 7 18.1 7 17V13H17Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="cart-count">1</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="hero-section">
+            <div class="hero-text">
+                <h2 class="hero-title">
+                    SKINCARE FOR GUYS<br>
+                    THAT AREN'T INTO<br>
+                    SKINCARE
+                </h2>
+                <p class="hero-subtitle">TRY THE ONE MINUTE SKINCARE ROUTINE</p>
+                <button class="cta-button">TRY TODAY!</button>
+                
+                <div class="testimonial">
+                    <div class="stars">
+                        <span>⭐</span>
+                        <span>⭐</span>
+                        <span>⭐</span>
+                        <span>⭐</span>
+                        <span>⭐</span>
+                    </div>
+                    <p class="testimonial-text">
+                        "I LOVE THIS STUFF, IT TOTALLY<br>
+                        CHANGED THE GAME FOR ME"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">PS</div>
+                        <span class="author-name">PETER S.</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-products">
+                <div class="product-container">
+                    <img src="assets/Group 18.png" alt="D1 Skincare Products" class="products-image">
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- SECTION 2 -->
+<section class="section-2">
+    <div class="highlight-bar">
+      Just <span>one minute</span> a day will make your skin look healthier and younger
     </div>
-  </header>
-
-  <!-- HERO -->
-  <main>
-    <section class="hero grid-container">
-      <div class="grid-x grid-margin-x align-middle">
-        <div class="cell small-12 medium-6 hero-copy">
-          <h1>Discover curated essentials</h1>
-          <p class="lead">Quality products. Clean design. Free shipping over ₱2,500.</p>
-          <a href="#" class="button large cta">Shop New Arrivals</a>
-        </div>
-        <div class="cell small-12 medium-6 hero-image">
-          <img src="assets/hero.jpg" alt="Hero product image">
-        </div>
-      </div>
-    </section>
-
-    <!-- CATEGORIES / BANNERS (section examples from Sketch) -->
-    <section class="categories grid-container">
-      <div class="grid-x grid-margin-x small-up-2 medium-up-4">
-        <div class="cell category-card">
-          <img src="assets/category-1.jpg" alt="Category 1">
-          <h4>Accessories</h4>
-        </div>
-        <div class="cell category-card">
-          <img src="assets/category-2.jpg" alt="Category 2">
-          <h4>Apparel</h4>
-        </div>
-        <div class="cell category-card">
-          <img src="assets/category-3.jpg" alt="Category 3">
-          <h4>Home</h4>
-        </div>
-        <div class="cell category-card">
-          <img src="assets/category-4.jpg" alt="Category 4">
-          <h4>Gifts</h4>
-        </div>
-      </div>
-    </section>
-
-    <!-- FEATURED / CAROUSEL -->
-    <section class="featured-products grid-container">
-      <h2 class="section-title">Featured Products</h2>
-      <div class="carousel" data-flickity='{ "contain": true, "pageDots": false }'>
-        <div class="carousel-cell product-card">
-          <img src="assets/product-1.jpg" alt="Product 1">
-          <div class="product-info">
-            <h3>Product Title One</h3>
-            <p class="price">₱1,250</p>
-          </div>
-        </div>
-        <div class="carousel-cell product-card">
-          <img src="assets/product-2.jpg" alt="Product 2">
-          <div class="product-info">
-            <h3>Product Title Two</h3>
-            <p class="price">₱899</p>
-          </div>
-        </div>
-        <div class="carousel-cell product-card">
-          <img src="assets/product-3.jpg" alt="Product 3">
-          <div class="product-info">
-            <h3>Product Title Three</h3>
-            <p class="price">₱2,350</p>
-          </div>
-        </div>
-        <!-- add more product cells as needed -->
-      </div>
-    </section>
-
-    <!-- PROMO BANNER -->
-    <section class="promo grid-container">
-      <div class="grid-x align-middle">
-        <div class="cell small-12 medium-8">
-          <h3>Season sale — up to 30% off selected lines</h3>
-          <p>Limited time only. While stocks last.</p>
-        </div>
-        <div class="cell small-12 medium-4 text-right">
-          <a class="button hollow large" href="#">Shop Sale</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- MORE PRODUCTS (static) -->
-    <section class="more-products grid-container">
-      <h2 class="section-title">You May Also Like</h2>
-      <div class="grid-x grid-margin-x small-up-2 medium-up-4">
-        <div class="cell product-simple">
-          <img src="assets/product-4.jpg" alt="Product 4">
-          <h4>Product Four</h4>
-          <p class="price">₱699</p>
-        </div>
-        <div class="cell product-simple">
-          <img src="assets/product-5.jpg" alt="Product 5">
-          <h4>Product Five</h4>
-          <p class="price">₱1,499</p>
-        </div>
-        <div class="cell product-simple">
-          <img src="assets/product-6.jpg" alt="Product 6">
-          <h4>Product Six</h4>
-          <p class="price">₱2,050</p>
-        </div>
-        <div class="cell product-simple">
-          <img src="assets/product-7.jpg" alt="Product 7">
-          <h4>Product Seven</h4>
-          <p class="price">₱3,999</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- NEWSLETTER -->
-    <section class="newsletter grid-container">
-      <div class="grid-x align-middle">
-        <div class="cell small-12 medium-8">
-          <h3>Get 10% off your first order</h3>
-          <p>Subscribe to our newsletter for new arrivals & offers.</p>
-        </div>
-        <div class="cell small-12 medium-4">
-          <form class="newsletter-form" action="#" onsubmit="event.preventDefault(); alert('Subscribed (demo)')">
-            <input type="email" placeholder="Enter your email" required>
-            <button class="button">Subscribe</button>
-          </form>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="site-footer grid-container">
-    <div class="grid-x grid-margin-x">
-      <div class="cell small-12 medium-4">
-        <h5>About</h5>
-        <p class="small">Short company blurb. Address, contact info, or other details.</p>
-      </div>
-      <div class="cell small-12 medium-4">
-        <h5>Customer</h5>
-        <ul class="menu vertical">
-          <li><a href="#">Help</a></li>
-          <li><a href="#">Shipping</a></li>
-          <li><a href="#">Returns</a></li>
+  
+    <div class="section-2-content">
+      <!-- Left Side -->
+      <div class="text-content">
+        <h2>A SIMPLE ROUTINE THAT WORKS</h2>
+        <p>
+          Say goodbye to complicated skincare routines. Our mens' skincare line is designed 
+          for simplicity and effectiveness. With our lightweight formulas, you can achieve 
+          healthier and younger-looking skin with minimal effort. Perfect for guys who are new 
+          to skincare or just want to keep it simple.
+        </p>
+  
+        <ul class="features">
+          <li><img src="assets/Group 5 Copy.svg" alt="checkmark" class="checkmark-icon"> Lightweight formulas</li>
+          <li><img src="assets/Group 5 Copy.svg" alt="checkmark" class="checkmark-icon"> Easy to use formats</li>
+          <li><img src="assets/Group 5 Copy.svg" alt="checkmark" class="checkmark-icon"> Clean Ingredients</li>
+          <li><img src="assets/Group 5 Copy.svg" alt="checkmark" class="checkmark-icon"> Everything you need, nothing you don't</li>
         </ul>
       </div>
-      <div class="cell small-12 medium-4">
-        <h5>Follow</h5>
-        <p class="small">Social links/icons here</p>
+  
+      <!-- Right Side -->
+      <div class="image-content">
+        <div class="circle-bg">
+          
+        </div>
       </div>
     </div>
-    <div class="grid-x">
-      <div class="cell small-12 text-center">
-        <small>© <span id="year"></span> Shop — All rights reserved</small>
+  </section>
+  <!-- SECTION 3 -->
+<section class="section-3">
+    <!-- Features Row -->
+    <div class="features-row">
+      <div class="feature-item">
+        <img src="assets/Bitmap.jpg" alt="Cloud" />
+        <p>Cutting-edge<br>Korean Skincare Technology</p>
+      </div>
+      <div class="feature-item">
+        <img src="assets/Bitmap-1.jpg" alt="Ocean" />
+        <p>Science-backed<br>Ingredients</p>
+      </div>
+      <div class="feature-item">
+        <img src="assets/Bitmap-2.jpg" alt="Leaf" />
+        <p>Dermatologically<br>Tested</p>
       </div>
     </div>
-  </footer>
+  
+    <!-- Center Content -->
+    <div class="center-content">
+      <p class="small-text">Heres how D1 works</p>
+      <div class="clock-icon"><img src="assets/clock.svg" alt="clock" class="clock-svg"></div>
+      <h2>JUST 1 MINUTE A DAY</h2>
+    </div>
+  </section>
+  <!-- SECTION 4 -->
+<section class="section-4">
+    <div class="steps-container">
+  
+      <!-- Step 1 -->
+      <div class="step">
+        <div class="step-image">
+          <span class="step-number">1</span>
+          <img src="assets/Bitmap-9.jpg" alt="Step 1 - Cleanser">
+        </div>
+        <div class="step-info">
+          <img src="assets/product/cleanser.png" alt="Bamboo Charcoal Cleanser" class="product-img">
+          <p>Wash your face with our Bamboo Charcoal Cleanser</p>
+        </div>
+      </div>
+  
+      <!-- Step 2 -->
+      <div class="step">
+        <div class="step-image">
+          <span class="step-number">2</span>
+          <img src="assets/Bitmap-10.jpg"Step 2 - Moisturizer">
+        </div>
+        <div class="step-info">
+          <img src="assets/product/moisturizer.png" alt="All Day Moisturizer" class="product-img">
+          <p>Apply a dime size amount of All Day Moisturizer evenly to your face</p>
+        </div>
+      </div>
+  
+      <!-- Step 3 -->
+      <div class="step">
+        <div class="step-image">
+          <span class="step-number">3</span>
+          <img src="assets/Bitmap-11.jpg" alt="Step 3 - Eye Cream">
+        </div>
+        <div class="step-info">
+          <img src="assets/product/stick.png" alt="Eye Cream" class="product-img">
+          <p>Apply small amount of our Eye Cream under your eyes and around the sides</p>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+<!-- SECTION 5 -->
+<section class="section-5">
 
-  <!-- Foundation JS (for utilities) -->
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/js/foundation.min.js"></script>
+    <!-- Top Content -->
+    <div class="results-text">
+      <h2>RESULTS YOU CAN SEE</h2>
+      <p>
+        A simple skincare routine is essential to reduce and prevent fine lines,
+        wrinkles, dry skin, and dark splotches that start to appear on your face
+        as you age.
+      </p>
+      <p>
+        If you dont feel better and see results in 30 days, you can keep the product
+        and we’ll send you a full refund
+      </p>
+    </div>
+  
+    <!-- Image + Quote -->
+    <div class="results-image">
+      <img src="assets/AdobeStock_450000130-1.jpg" alt="Results Skincare">
+      <div class="quote">
+        “THE ONE MINUTE ROUTINE THAT WILL SAVE YOUR FACE”
+      </div>
+    </div>
+  
+    <!-- Bottom Feature Bar -->
+    <div class="results-bar">
+      <div class="bar-item"><img src="assets/Group 5 Copy.svg" alt="checkmark" class="checkmark-icon"> NO PRESCRIPTION REQUIRED</div>
+      <div class="bar-item"><img src="assets/Group 5 Copy.svg" alt="checkmark" class="checkmark-icon"> ALL-NATURAL INGREDIENTS</div>
+      <div class="bar-item"><img src="assets/Group 5 Copy.svg" alt="checkmark" class="checkmark-icon"> FORMULATED BY DOCTORS & PHDS</div>
+      <div class="bar-item"><img src="assets/Group 5 Copy.svg" alt="checkmark" class="checkmark-icon"> 100% RISK-FREE RETURNS</div>
+    </div>
+  
+  </section>
 
-  <!-- Flickity -->
-  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-
-  <!-- Your JS -->
-  <script src="app.js"></script>
-
-  <script>
-    // Small runtime fixes
-    document.getElementById('year').textContent = new Date().getFullYear();
-    $(document).foundation();
-  </script>
-
+  <!-- SECTION 6 -->
+<section class="section-6">
+    <div class="benefits-text">
+      <h2>DAILY BENEFITS.<br>LONG-TERM RESULTS</h2>
+      <p>We started D1 because....</p>
+    </div>
+  
+    <div class="benefits-grid">
+      <!-- Card 1 -->
+      <div class="benefit-card">
+        <img src="benefit1.jpg" alt="Look fresher">
+        <h3>LOOK FRESHER AND MORE CONFIDENT</h3>
+        <p>Prevent and reduce fine lines and wrinkles that develop with dry skin as you age</p>
+      </div>
+  
+      <!-- Card 2 -->
+      <div class="benefit-card">
+        <img src="benefit2.jpg" alt="Youthful skin">
+        <h3>PREVENT AGING AND MAINTAIN YOUTHFUL SKIN</h3>
+        <p>Prevent and reduce fine lines and wrinkles that develop with dry skin as you age</p>
+      </div>
+  
+      <!-- Card 3 -->
+      <div class="benefit-card">
+        <img src="benefit3.jpg" alt="Skin health">
+        <h3>BOOST YOUR SKIN HEALTH</h3>
+        <p>Prevent and reduce fine lines and wrinkles that develop with dry skin as you age</p>
+      </div>
+    </div>
+  </section>
+  
+  
+    <script src="script.js"></script>
 </body>
 </html>
