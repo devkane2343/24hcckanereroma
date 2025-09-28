@@ -1,32 +1,13 @@
-{
-  "name": "24hcckanereroma",
-  "version": "1.0.0",
-  "description": "24 Hour Code Challenge - Web Shop Frontend",
-  "main": "index.html",
+﻿{
+  "name": "static-scss-site",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "build": "sass src/scss/main.scss dist/css/styles.css",
-    "sass": "sass --watch src/scss/main.scss dist/css/styles.css",
-    "start": "live-server"
+    "build:css": "npx --yes sass src/scss:dist/css --no-source-map",
+    "build": "npm run build:css",
+    "vercel-build": "npm run build"
   },
   "devDependencies": {
-    "live-server": "^1.2.2",
-    "sass": "^1.93.2"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/devkane2343/24hcckanereroma.git"
-  },
-  "keywords": [
-    "scss",
-    "sass",
-    "frontend",
-    "challenge",
-    "webshop"
-  ],
-  "author": "Itachi",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/devkane2343/24hcckanereroma/issues"
-  },
-  "homepage": "https://github.com/devkane2343/24hcckanereroma#readme"
+    "sass": "^1.80.0"
+  }
 }
