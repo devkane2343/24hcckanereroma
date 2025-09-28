@@ -1,8 +1,14 @@
 {
-  "version": 2,
-  "buildCommand": "npm run build",
-  "outputDirectory": "dist",
-  "routes": [
-    { "src": "/(.*)", "dest": "/index.html" }
-  ]
+  "name": "static-scss-site",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "sass --watch src/scss/main.scss dist/css/main.css",
+    "build": "sass src/scss/main.scss dist/css/main.css --no-source-map --style=compressed",
+    "start": "serve dist"
+  },
+  "dependencies": {
+    "sass": "^1.93.2",
+    "serve": "^14.2.0"
+  }
 }
