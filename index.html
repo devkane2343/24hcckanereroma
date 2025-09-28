@@ -647,11 +647,29 @@
   </div>
 
   <!-- Message Icon -->
-  <div class="message-icon" aria-label="Contact us">
+  <div class="message-icon" id="messageIcon" aria-label="Contact us">
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M20 2H4C2.9 2 2 2.9 2 4V22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2Z" stroke="currentColor" stroke-width="2" fill="none"/>
     </svg>
   </div>
+
+  <!-- Chat Modal -->
+  <div id="chatModal" class="chat-modal">
+    <div class="chat-modal-content">
+      <div class="chat-modal-header">
+        <h3>Chat with us</h3>
+        <button class="chat-modal-close" id="chatModalClose" aria-label="Close Chat">&times;</button>
+      </div>
+      <div class="chat-modal-body">
+        <div id="chatbase-widget"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Chatbase Widget Script -->
+  <script>
+    (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="CSJXG-hJMIMqcchLpiNML";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+  </script>
 
   <script src="script.js"></script>
 </body>

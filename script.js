@@ -502,4 +502,39 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Initialize cart manager
   const cartManager = new CartManager()
+
+  // Chat Modal functionality
+  const messageIcon = document.getElementById('messageIcon')
+  const chatModal = document.getElementById('chatModal')
+  const chatModalClose = document.getElementById('chatModalClose')
+
+  // Open chat modal when message icon is clicked
+  messageIcon.addEventListener('click', function(e) {
+    e.preventDefault()
+    chatModal.classList.add('active')
+    document.body.style.overflow = 'hidden' // Prevent background scrolling
+  })
+
+  // Close chat modal functionality
+  function closeChatModal() {
+    chatModal.classList.remove('active')
+    document.body.style.overflow = 'auto' // Restore scrolling
+  }
+
+  // Close modal when clicking close button
+  chatModalClose.addEventListener('click', closeChatModal)
+
+  // Close modal when clicking outside the modal content
+  chatModal.addEventListener('click', function(e) {
+    if (e.target === chatModal) {
+      closeChatModal()
+    }
+  })
+
+  // Close modal when pressing Escape key
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && chatModal.classList.contains('active')) {
+      closeChatModal()
+    }
+  })
   
