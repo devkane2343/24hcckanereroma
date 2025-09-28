@@ -1,0 +1,74 @@
+{
+    "brand": "D1 Skincare for Men",
+    "tagline": "Skincare for guys that aren’t into skincare.",
+    "products": [
+      {
+        "name": "Charcoal Face Wash",
+        "description": "Deep-cleaning face wash with charcoal to remove dirt, oil, and impurities. Leaves skin refreshed without over-drying.",
+        "benefits": ["Cleans deeply", "Removes excess oil", "Unclogs pores"]
+      },
+      {
+        "name": "All Day Face Moisturizer",
+        "description": "Lightweight daily moisturizer to hydrate, protect, and energize skin throughout the day.",
+        "benefits": ["Hydrates skin", "Protects from dryness", "Keeps skin energized"]
+      },
+      {
+        "name": "Daily Eye Cream",
+        "description": "Targeted eye cream that reduces puffiness, dark circles, and fine lines in just one minute a day.",
+        "benefits": ["Reduces puffiness", "Minimizes dark circles", "Smooths fine lines"]
+      }
+    ],
+    "routine": {
+      "steps": [
+        "Wash with Charcoal Face Wash",
+        "Hydrate with All Day Face Moisturizer",
+        "Apply Daily Eye Cream"
+      ],
+      "time": "Just 1 minute a day"
+    },
+    "benefits": {
+      "short_term": ["Instant hydration", "Smoother skin", "Energized look"],
+      "long_term": ["Healthier skin", "Reduced signs of aging", "Boosted confidence"]
+    },
+    "ingredients": {
+      "face_wash": ["Activated Charcoal", "Aloe Vera"],
+      "moisturizer": ["Spirulina", "Algae Extract", "Niacinamide"],
+      "eye_cream": ["Caffeine", "Peptides", "Hyaluronic Acid"]
+    },
+    "offers": {
+      "bundle": {
+        "name": "The D1 Set",
+        "includes": ["Charcoal Face Wash", "All Day Face Moisturizer", "Daily Eye Cream"],
+        "price": "One-time or subscription options"
+      }
+    },
+    "faq": [
+      {
+        "question": "What makes D1 different?",
+        "answer": "D1 is made for guys who don’t want complicated skincare routines. It’s fast, simple, and effective — just 1 minute a day."
+      },
+      {
+        "question": "How long does it take to see results?",
+        "answer": "Most guys notice fresher-looking skin right away, with long-term benefits like reduced fine lines and healthier skin in a few weeks."
+      },
+      {
+        "question": "Can I buy products separately?",
+        "answer": "Yes, each product can be purchased individually, but the best value is in the D1 Set."
+      },
+      {
+        "question": "Is D1 good for sensitive skin?",
+        "answer": "Yes, D1 products are designed to be effective yet gentle on all skin types, including sensitive skin."
+      },
+      {
+        "question": "How do I use the products?",
+        "answer": "Step 1: Wash with the Charcoal Face Wash. Step 2: Apply the All Day Face Moisturizer. Step 3: Finish with the Daily Eye Cream."
+      }
+    ],
+    "social_proof": {
+      "reviews": [
+        "“The one minute routine that will save your face.”",
+        "Guys see results like smoother skin, less puffiness, and boosted confidence."
+      ]
+    }
+  }
+  

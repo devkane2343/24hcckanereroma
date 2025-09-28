@@ -1,9 +1,9 @@
-# D1 - Skincare for Real Men
+# D1 - Skincare for Real Men - 24 Hour Coding Challenge by - Jan Kane T. Reroma
 
 A modern, responsive eCommerce homepage for D1 skincare products, built with semantic HTML5, SCSS, and vanilla JavaScript.
 
 ## 🚀 Live Demo
-[View the live site here](.......)  
+[View the live site here](https://24hcckanereroma.vercel.app/)  
 
 ---
 
@@ -83,6 +83,10 @@ A modern, responsive eCommerce homepage for D1 skincare products, built with sem
 4. **Open in browser:**
    - Open `index.html` in your browser
    - Or use a local server: `python -m http.server 8000`
+
+5. **Open in Vercel** 
+   - No setup needed
+   - Link : https://24hcckanereroma.vercel.app/
 
 ---
 
