@@ -62,13 +62,6 @@
                 <button class="cta-button">TRY TODAY!</button>
                 
                 <div class="testimonial">
-                    <div class="stars">
-                        <span>⭐</span>
-                        <span>⭐</span>
-                        <span>⭐</span>
-                        <span>⭐</span>
-                        <span>⭐</span>
-                    </div>
                     <p class="testimonial-text">
                         "I LOVE THIS STUFF, IT TOTALLY<br>
                         CHANGED THE GAME FOR ME"
@@ -77,12 +70,26 @@
                         <div class="author-avatar">PS</div>
                         <span class="author-name">PETER S.</span>
                     </div>
+                    <a href="#section-11" class="testimonial-stars" aria-label="See testimonials">
+                        <span>⭐</span>
+                        <span>⭐</span>
+                        <span>⭐</span>
+                        <span>⭐</span>
+                        <span>⭐</span>
+                    </a>
                 </div>
             </div>
             
             <div class="hero-products">
                 <div class="product-container">
                     <img src="assets/Group 18.png" alt="D1 Skincare Products" class="products-image" loading="lazy">
+                    <a href="#section-11" class="hero-stars" aria-label="See testimonials">
+                        <span>⭐</span>
+                        <span>⭐</span>
+                        <span>⭐</span>
+                        <span>⭐</span>
+                        <span>⭐</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -212,11 +219,18 @@
     </div>
   
     <!-- Bottom Feature Bar -->
-    <div class="results-bar">
-      <div class="bar-item"><img src="assets/Group 5 Copy.svg" alt="checkmark" class="checkmark-icon"> NO PRESCRIPTION REQUIRED</div>
-      <div class="bar-item"><img src="assets/Group 5 Copy.svg" alt="checkmark" class="checkmark-icon"> ALL-NATURAL INGREDIENTS</div>
-      <div class="bar-item"><img src="assets/Group 5 Copy.svg" alt="checkmark" class="checkmark-icon"> FORMULATED BY DOCTORS & PHDS</div>
-      <div class="bar-item"><img src="assets/Group 5 Copy.svg" alt="checkmark" class="checkmark-icon"> 100% RISK-FREE RETURNS</div>
+    <div class="results-bar marquee" aria-label="Key benefits">
+      <div class="marquee__track" aria-hidden="false">
+        <div class="bar-item"><img src="assets/Group 5 Copy.svg" alt="" class="checkmark-icon" aria-hidden="true"> NO PRESCRIPTION REQUIRED</div>
+        <div class="bar-item"><img src="assets/Group 5 Copy.svg" alt="" class="checkmark-icon" aria-hidden="true"> ALL-NATURAL INGREDIENTS</div>
+        <div class="bar-item"><img src="assets/Group 5 Copy.svg" alt="" class="checkmark-icon" aria-hidden="true"> FORMULATED BY DOCTORS & PHDS</div>
+        <div class="bar-item"><img src="assets/Group 5 Copy.svg" alt="" class="checkmark-icon" aria-hidden="true"> 100% RISK-FREE RETURNS</div>
+        <!-- duplicate for seamless loop -->
+        <div class="bar-item"><img src="assets/Group 5 Copy.svg" alt="" class="checkmark-icon" aria-hidden="true"> NO PRESCRIPTION REQUIRED</div>
+        <div class="bar-item"><img src="assets/Group 5 Copy.svg" alt="" class="checkmark-icon" aria-hidden="true"> ALL-NATURAL INGREDIENTS</div>
+        <div class="bar-item"><img src="assets/Group 5 Copy.svg" alt="" class="checkmark-icon" aria-hidden="true"> FORMULATED BY DOCTORS & PHDS</div>
+        <div class="bar-item"><img src="assets/Group 5 Copy.svg" alt="" class="checkmark-icon" aria-hidden="true"> 100% RISK-FREE RETURNS</div>
+      </div>
     </div>
   
   </section>
@@ -400,7 +414,7 @@
 </section>
 
 <!-- SECTION 11 -->
-<section class="section-11">
+<section id="section-11" class="section-11">
   <div class="section-11__inner">
     <h3 class="section-11__title">Here is what our customers say</h3>
 

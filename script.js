@@ -47,14 +47,22 @@ document.addEventListener("DOMContentLoaded", () => {
     const ctaButton = document.querySelector(".cta-button")
     ctaButton.addEventListener("click", function (e) {
       e.preventDefault()
-      // Add scroll to products section or form
       console.log("CTA button clicked")
-  
-      // Add a subtle animation
+
+      // Subtle tap animation
       this.style.transform = "scale(0.95)"
       setTimeout(() => {
         this.style.transform = "scale(1)"
       }, 150)
+
+      // Smoothly scroll to Section 7
+      const targetSection = document.querySelector('.section-7')
+      if (targetSection && typeof targetSection.scrollIntoView === 'function') {
+        targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      } else if (targetSection) {
+        // Fallback for very old browsers
+        window.scrollTo({ top: targetSection.offsetTop, left: 0, behavior: 'smooth' })
+      }
     })
   
     // Get Started button functionality
