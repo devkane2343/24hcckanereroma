@@ -1,5 +1,5 @@
 // ===== Main SCSS File =====
-// This file imports all partials in the correct order
+// This file is sectioned properly from base to components please just check accordingly 
 
 // Base
 @import "base/reset";
@@ -20,7 +20,7 @@
 @import "components/marquee";
 @import "components/cart";
 
-// Sections
+// Sections 
 @import "sections/hero";
 @import "sections/section-2";
 @import "sections/section-3";
