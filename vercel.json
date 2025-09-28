@@ -1,5 +1,5 @@
 {
-    "buildCommand": "npm run build",
-    "outputDirectory": "dist",
+    "buildCommand": "sass src/scss/main.scss dist/css/styles.css",
+    "outputDirectory": ".",
     "installCommand": "npm install"
   }

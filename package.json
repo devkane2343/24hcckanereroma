@@ -4,6 +4,7 @@
   "description": "24 Hour Code Challenge - Web Shop Frontend",
   "main": "index.html",
   "scripts": {
+    "build": "sass src/scss/main.scss dist/css/styles.css",
     "sass": "sass --watch src/scss/main.scss dist/css/styles.css",
     "start": "live-server"
   },
