@@ -923,12 +923,10 @@ html {
 }
 
 .section-2 .circle-bg {
-  width: 800px;
-  height: 800px;
-  background: url("assets/Group 17.png") no-repeat center/contain;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  display: block;
   margin: 0 auto;
   transition: var(--transition);
   cursor: pointer;
@@ -960,8 +958,8 @@ html {
     order: 2;
   }
   .section-2 .circle-bg {
-    width: 600px;
-    height: 600px;
+    width: 250px;
+    height: 250px;
   }
 }
 @media (max-width: 768px) {
@@ -986,8 +984,8 @@ html {
     margin-bottom: 0.8rem;
   }
   .section-2 .circle-bg {
-    width: 400px;
-    height: 400px;
+    width: 200px;
+    height: 200px;
   }
 }
 @media (max-width: 480px) {
@@ -1009,8 +1007,8 @@ html {
     font-size: clamp(0.9rem, 4vw, 1rem);
   }
   .section-2 .circle-bg {
-    width: 300px;
-    height: 300px;
+    width: 150px;
+    height: 150px;
   }
 }
 /* Section 3 */
