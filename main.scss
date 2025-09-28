@@ -1,0 +1,12 @@
+@import 'variables';
+@import 'mixins';
+@import 'base';
+@import 'layout';
+@import 'components/header';
+@import 'components/cards';
+
+// small responsive tweaks
+@media (max-width: 768px) {
+  .hero .hero-copy h1 { font-size: 1.75rem; }
+  .carousel-cell { width: 200px !important; }
+}

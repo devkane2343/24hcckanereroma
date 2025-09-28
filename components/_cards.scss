@@ -1,0 +1,11 @@
+.product-card, .product-simple {
+    background: #fff;
+    border: 1px solid #eef1f5;
+    padding: 0.5rem;
+    border-radius: 6px;
+    text-align: left;
+  
+    img { border-radius:6px; }
+    .product-info { padding: 0.5rem 0; h3 { font-size:1rem; margin:0 0 .25rem; } .price { font-weight:600; color:$brand; } }
+  }
+  

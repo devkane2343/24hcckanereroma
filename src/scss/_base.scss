@@ -1,0 +1,8 @@
+* { box-sizing: border-box; }
+html { font-family: $font-family; font-size: 16px; -webkit-font-smoothing:antialiased; }
+body { margin:0; background: $bg; color: #111827; line-height:1.4; }
+a { color: $brand; text-decoration: none; }
+img { max-width: 100%; display: block; }
+.section-title { font-size: 1.125rem; margin-bottom: $sp-base; font-weight:600; }
+.grid-container { @include container(); }
+.lead { color: $muted; font-size: 1.05rem; margin-bottom: $sp-base; }

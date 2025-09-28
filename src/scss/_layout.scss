@@ -1,0 +1,28 @@
+.site-header {
+    padding: $sp-base 0;
+    border-bottom: 1px solid #e6e9ef;
+    .logo { font-weight:700; color:$brand; font-size:1.25rem; }
+    .logo-dot { color: $accent; }
+    .menu { li { margin-right: 1rem; a { padding: 0.5rem 0; } } }
+    .menu-toggle { background: none; border: none; font-size:1.25rem; }
+    .mobile-menu { padding: $sp-base 0; &.hide { display:none; } }
+  }
+  
+  .hero {
+    padding: $sp-xl 0;
+    .hero-copy { h1 { font-size:2.25rem; margin-bottom:$sp-base; } .cta { margin-top:$sp-base; } }
+    .hero-image img { border-radius: 6px; }
+  }
+  
+  .categories { padding: $sp-xl 0; .category-card { text-align:center; img { border-radius:6px; } h4{ margin-top:0.75rem; } } }
+  
+  .featured-products { padding: $sp-xl 0; .carousel { margin-top: $sp-base; } .carousel-cell { width: 280px; margin-right: 16px; } }
+  
+  .promo { padding: $sp-lg 0; background: #fafafa; border-radius: 6px; margin-bottom:$sp-base; }
+  
+  .more-products { padding: $sp-lg 0; }
+  
+  .newsletter { padding: $sp-lg 0; form { display:flex; input{flex:1;padding:0.6rem;margin-right:0.5rem;border:1px solid #e6e6e6;border-radius:4px;} } }
+  
+  .site-footer { padding: $sp-lg 0; border-top:1px solid #eaeef2; small { color:$muted; } }
+  
