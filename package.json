@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "sass --watch src/scss/main.scss dist/css/main.css",
-    "build": "sass src/scss/main.scss dist/css/main.css --no-source-map --style=compressed",
+    "dev": "npx sass --watch src/scss/main.scss dist/css/main.css",
+    "build": "npx sass src/scss/main.scss dist/css/main.css --no-source-map --style=compressed",
     "vercel-build": "npm run build"
   },
   "devDependencies": {
