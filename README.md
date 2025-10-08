@@ -1,5 +1,13 @@
 # D1 - Skincare for Real Men - 24 Hour Coding Challenge by - Jan Kane T. Reroma
 
+
+"After reviewing the challenge brief again, I realized that the term “Foundation” referred to the ZURB Foundation framework. During the 24-hour implementation, I initially interpreted it as a reference to the project’s foundational structure rather than the specific framework.
+
+While the submission does not currently use the ZURB Foundation library, it is fully responsive and follows SCSS modularization, BEM naming conventions, and standard front-end best practices.
+
+I am fully familiar with the Foundation grid system and SCSS utilities and can easily integrate them if required. I focused on delivering clean, maintainable code and a pixel-perfect layout within the given time constraint."
+
+
 A modern, responsive eCommerce homepage for D1 skincare products, built with semantic HTML5, SCSS, and vanilla JavaScript.
 
 ## 🚀 Live Demo
